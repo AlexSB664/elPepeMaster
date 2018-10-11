@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--para mas iconos coraima xp https://www.w3schools.com/icons/fontawesome_icons_webapp.asp -->
+<head>
+  {% load staticfiles %}
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Registro</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Bootstrap core CSS -->
+  <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="{% static 'css/mdb.min.css' %}" rel="stylesheet">
+  <!-- Your custom styles (optional) -->
+  <link href="{% static 'css/style.min.css' %}" rel="stylesheet">
+  <style type="text/css">
+
+    html,
+    body,
+    header,
+    .carousel {
+      height: 100%;
+    }
+
+    @media (min-width: 800px) and (max-width: 850px) {
+            .navbar:not(.top-nav-collapse) {
+                background: #1C2331!important;
+            }
+        }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+    <div class="container">
+
+      <!-- Brand -->
+      <a class="navbar-brand" href="/index/">
+        <strong>EPM</strong>
+      </a>
+
+      <!-- Collapse -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Links -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <!-- Left -->
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="/index/">Inicio
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/acercade/ ">Acerca de EPM</a>
+          </li>
+          <li class="nav-item">
+            <!--<a class="nav-link" href="https://mdbootstrap.com/getting-started/" target="_blank">?</a> -->
+          </li>
+          <li class="nav-item">
+            <!--<a class="nav-link" href="https://mdbootstrap.com/bootstrap-tutorial/" target="_blank">?</a>-->
+          </li>
+        </ul>
+
+        <!-- Right -->
+        <ul class="navbar-nav nav-flex-icons">
+          <li class="nav-item">
+            <!--<a href="https://www.facebook.com/mdbootstrap" class="nav-link" target="_blank">
+              <i class="fa fa-facebook"></i>
+            </a>-->
+          </li>
+          <li class="nav-item">
+            <!-- <a href="https://twitter.com/MDBootstrap" class="nav-link" target="_blank">
+              <i class="fa fa-twitter"></i>
+            </a> -->
+          </li>
+          <li class="nav-item">
+            <a href="https://github.com/AlexSB664/elPepeMaster" class="nav-link border border-light rounded"
+              target="_blank">
+              <i class="fa fa-github mr-2"></i>EPM GitHub
+            </a>
+          </li>
+        </ul>
+
+      </div>
+
+    </div>
+  </nav>
+  <!-- Navbar -->
+
+ 
+
+  <!--Main layout-->
+  <main>
+  <br></br>
+    
+    <div class="container body-content" style="margin-top: 100px;">
+        <main role="main">
+            
+
+
+<style>
+    .login-form .form-control {
+        background: #f7f7f7 none repeat scroll 0 0;
+        border: 1px solid #d4d4d4;
+        border-radius: 4px;
+        font-size: 14px;
+        height: 50px;
+        line-height: 50px;
+    }
+
+    .main-div {
+        background: #ffffff none repeat scroll 0 0;
+        border-radius: 2px;
+        margin: 10px auto 30px;
+        max-width: 38%;
+        padding: 50px 70px 70px 71px;
+    }
+
+    .login-form .form-group {
+        margin-bottom: 10px;
+    }
+
+
+    .login-form {
+        /*text-align: center;*/
+        text-align: left;
+        margin-top: 60px;
+        /*box-shadow: 0px 0px 10px 1px grey;*/
+        padding-bottom: 20px;
+        background: white;
+    }
+
+        .login-form .btn.btn-primary {
+            background: #f0ad4e none repeat scroll 0 0;
+            border-color: #f0ad4e;
+            color: #ffffff;
+            font-size: 14px;
+            width: 100%;
+            height: 50px;
+            line-height: 50px;
+            padding: 0;
+        }
+
+    .btn-primary {
+        background: #721c24 none repeat scroll 0 0;
+        border-color: #721c24;
+        color: #ffffff;
+        font-size: 14px;
+        width: 100%;
+        height: 50px;
+        line-height: 50px;
+        padding: 0;
+    }
+
+        .btn-primary:hover {
+            background: black;
+            border-color: black;
+        }
+
+    body {
+        background-color: #F0F0F0 !important;
+    }
+
+    a {
+        color: #721c24;
+    }
+
+        a:hover {
+            color: black;
+        }
+</style>
+<div class="container">
+    <div class="login-form col-md-4 offset-md-4" style="border-radius:3%;">
+        <h2 class="panel-title text-center">Iniciar sesión</h2>
+        <hr>
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active show" data-toggle="tab" href="#cliente">Registro</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#login">Iniciar sesión</a>
+            </li>
+        </ul>
+        <!-- Tab panes -->
+        <div class="tab-content">
+            <div id="login" class="container tab-pane" style="border-bottom:1px solid #dee2e6; border-left:1px solid #dee2e6; border-right:1px solid #dee2e6; ">
+                <br>
+<form action="/Login/Inicio" method="post"><input name="__RequestVerificationToken" value="KzHk0rCk6LeALtdtp4ln0OPDewbQbyY2eHx9jKHVLVm-Soq0lSktY6XGduJThQVYfwHVFImbUJwxd7fb_3YVdzKwf1g5BFidhhJMf232_oY1" type="hidden">                    <div>
+                        <label></label>
+                        
+                        
+                            <div class="form-group">
+                                <label>Correo</label>
+                                <div>
+                                    <input class="form-control text-box single-line" id="usu_username" name="usu_username" required="" value="" type="text">
+                                    <span class="field-validation-valid text-danger" data-valmsg-for="usu_username" data-valmsg-replace="true"></span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>Contraseña</label>
+                                <div>
+                                    <input class="form-control text-box single-line" id="usu_password" name="usu_password" required="" value="" type="password">
+                                    <span class="field-validation-valid text-danger" data-valmsg-for="usu_password" data-valmsg-replace="false"> </span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div>
+                                    <input value="Iniciar sesión" class="btn btn-primary" type="submit">
+                                </div>
+                            </div>
+                        
+                    </div></form>
+            </div>
+            <div id="cliente" class="container tab-pane fade active show" style="border-bottom:1px solid #dee2e6; border-left:1px solid #dee2e6; border-right:1px solid #dee2e6;">
+                <br>
+<form action="/Login/ClienteFolio" method="post"><input name="__RequestVerificationToken" value="KAdsszWqVQVIleBwYwZ-QpsbTPhA2euQPG_4FEIROzTi-RASmPybRmpFbT0ex5X_fLA_Ker9icNFACqFM0JZjD1flpKMSOZS6dg2DhBBnuI1" type="hidden">                    <div>
+                        <label></label>
+                        
+                        <div class="form-group">
+                            <label>Nombre</label>
+                                <div>
+                                    <input id="Grlal_Folio" name="Grlal_Folio" class="form-control" required="" type="text">
+                                </div>
+                                <label>Apellido</label>
+                                <div>
+                                    <input id="Grlal_Folio" name="Grlal_Folio" class="form-control" required="" type="text">
+                                </div>
+                                <label>Correo</label>
+                                <div>
+                                    <input id="Grlal_Folio" name="Grlal_Folio" class="form-control" required="" type="text">
+                                </div>
+                                <label>Contraseña</label>
+                                <div>
+                                    <input id="Grlal_Folio" name="Grlal_Folio" class="form-control" required="" type="text">
+                                </div>
+                        </div>
+                        <div class="form-group">
+                            <div>
+                                <button type="submit" class="btn btn-primary">Registrar</button>
+                            </div>
+                        </div>
+                    </div>
+</form>            </div>
+        </div>
+    </div>
+</div>
+
+        </main>
+    </div>
+  <!--Footer-->
+  <footer class="page-footer text-center font-small mt-4 wow fadeIn">
+
+
+    <!--Copyright-->
+    <div class="footer-copyright py-3">
+      © 2018 Copyright:
+      <a href="https://mdbootstrap.com/bootstrap-tutorial/" target="_blank"> MDBootstrap.com </a>
+    </div>
+    <!--/.Copyright-->
+
+  </footer>
+  <!--/.Footer-->
+
+  <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="{% static 'js/popper.min.js' %}"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="{% static 'js/mdb.min.js' %}"></script>
+  <!-- Initializations -->
+  <script type="text/javascript">
+    // Animations initialization
+    new WOW().init();
+  </script>
+</body>
+
+</html>

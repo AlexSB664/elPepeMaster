@@ -23,6 +23,7 @@ from django.conf import settings
 from django.conf.urls.static import static
 from django.views.static import serve
 
+from principal.views import acercadeP, registroU,Index
 from principal import views
 """
 from pagina import views
@@ -32,8 +33,10 @@ from pagina.views import acercadeP
 urlpatterns = [
     path('admin/', admin.site.urls),
     url(r'^$',views.Index, name='index'),
-    url(r'index$',views.Index, name='index'),
-    #path('acercade/', acercadeP), 
+    #url(r'index$',views.Index, name='index'),
+    path('index/', Index,name='index'),     
+    path('acercade/', acercadeP,name='acercade'), 
+    path('registro/', registroU,name='registro')
 ]
 
 #para las fotos

@@ -4,5 +4,8 @@ from django.shortcuts import render
 def Index(request):
 	return render(request,'index.html')
 
-#def acercade(request):
-#	return render(request,'pagina/acercade.html') 
+def acercadeP(request):
+	return render(request,'acercade.html') 
+
+def registroU(request):
+	return render(request,'registro.html') 
