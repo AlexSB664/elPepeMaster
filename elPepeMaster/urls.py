@@ -24,11 +24,16 @@ from django.conf.urls.static import static
 from django.views.static import serve
 
 from principal import views
+"""
+from pagina import views
+from pagina.views import acercadeP
+"""
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     url(r'^$',views.Index, name='index'),
     url(r'index$',views.Index, name='index'),
+    #path('acercade/', acercadeP), 
 ]
 
 #para las fotos
