@@ -23,7 +23,7 @@ from django.conf import settings
 from django.conf.urls.static import static
 from django.views.static import serve
 
-from principal.views import acercadeP, registroU,Index
+from principal.views import acercadeP, registroU,Index,dashboard
 from principal import views
 """
 from pagina import views
@@ -36,7 +36,9 @@ urlpatterns = [
     #url(r'index$',views.Index, name='index'),
     path('index/', Index,name='index'),     
     path('acercade/', acercadeP,name='acercade'), 
-    path('registro/', registroU,name='registro')
+    path('registro/', registroU,name='registro'),
+    url(r'^dashboard', dashboard, name='dashboard')
+    
 ]
 
 #para las fotos
