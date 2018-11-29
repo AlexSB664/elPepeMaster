@@ -38,7 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'principal',
-    #'pagina',
+    'files',
+    'grappelli',
+    'filebrowser',
 ]
 
 MIDDLEWARE = [
@@ -127,6 +129,12 @@ LOGIN_URL = reverse_lazy('login')
 LOGIN_REDIRECT_URL = reverse_lazy('index')
 LOGOUT_URL = reverse_lazy('logout')
 #Para las fotos
-MEDIA_URL = '/'
 INTERCEPT_REDIRECTS = False
 INTERNAL_IPS = ('127.0.0.1',)
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = '/home/alex/WEB/elPepeMaster/media/'
+
+PROJECT_DIR=os.path.dirname(__file__)
+STATIC_ROOT= os.path.join(PROJECT_DIR,'static_media/')
+STATICFILES_DIRS = ( os.path.join(PROJECT_DIR,'static/'),)

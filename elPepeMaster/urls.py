@@ -25,6 +25,8 @@ from django.views.static import serve
 
 from principal.views import acercadeP, registroU,Index,dashboard
 from principal import views
+from files.views import upload_file
+from filebrowser.sites import site
 """
 from pagina import views
 from pagina.views import acercadeP
@@ -32,13 +34,15 @@ from pagina.views import acercadeP
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    url(r'^admin/filebrowser/',site.urls),
     url(r'^$',views.Index, name='index'),
     #url(r'index$',views.Index, name='index'),
     path('index/', Index,name='index'),     
     path('acercade/', acercadeP,name='acercade'), 
     path('registro/', registroU,name='registro'),
-    url(r'^dashboard', dashboard, name='dashboard')
-    
+    url(r'^dashboard', dashboard, name='dashboard'),
+    url(r'^uploads/', upload_file, name="uploads"),
+
 ]
 
 #para las fotos
